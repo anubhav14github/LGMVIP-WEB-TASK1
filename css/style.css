@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.time{
+    position: absolute;
+    left: 80vh;
+    background-color: red;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.logo{
+    display: flex;
+    width: 20px;
+    justify-content: left;
+    align-items: left;
+}
+
+.logo image{
+    width: 250px;
+    border: 3px solid white;
+    border-radius: 50px;
+ 
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list{
+    display: flex;
+    width: 300%;
+    align-items: baseline;
+
+}
+
+.nav-list li{
+    list-style: none;
+    align-items: baseline;
+    padding: 23px 30px;
+    position: relative;
+    top: 19px;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.nav-list li a:hover{
+    text-decoration: none;
+    color: blue;
+}
+
+.rightNav{
+    
+    width: 50%;
+    text-align: right;
+    position: relative;
+    top: 120px;
+}
+
+.background{
+    background: rgba(0, 0, 0, 0.7);
+    background-image: url(../image/bg1.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+    
+}
+
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    font-weight: 200;
+    height: 350px;
+}
+
+.Section{
+    height: 100vh;
+}
+
+.SectionO{
+    position: relative;
+    top: 60px;
+}
+
+.text-main{
+    font-size: 45px;
+}
+
+
+
+.btn1{
+    margin: 8px 2px;
+    padding: 5px 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.btn1:hover{
+    text-decoration: none;
+    color: blue;
+}
+
+.secRight{
+    margin: auto;
+} 
+
+.contactUs{
+    background-color: rgb(205, 222, 223);
+    text-align: center;
+    justify-content: center;
+}
+
+
+.textC{
+    text-align: center;
+}
+
+.aboutUs{
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+}
+
+.aboutUsl{
+    flex-direction: row-reverse;
+}
+
+
+.text-para{
+    font-size: 25px;
+}
+
+
+.paraO{
+    padding: 0px 60px;
+}
+
+.logoB img{
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 10px
+}
+.line{
+    width: 30px;
+    background-color:black;
+    height: 3px;
+    margin: 3px 3px;
+ }
+
+@media only screen and (max-width: 1150px){
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    .rightnav{
+        text-align: center;
+    }
+    #search{
+        width: 50%;
+    }
+    .burger{
+        display: none;
+    }
+    .h-nav-resp{
+        height:70px
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+}
+
+
+.services {
+    background-color: rgb(58, 55, 55);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 10rem 0;
+  }
+  
+  
+  .servicesW {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  
+  .servicesC {
+    margin: 10px;
+    height: 300px;
+    width: 200px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+    transition: 0.3s ease-in;
+  }
+  
+  .servicesC:nth-child(2) {
+    background: #1fa2ff;  
+    background: -webkit-linear-gradient(
+      to right,
+      #186ba1,
+      #df97d3,
+      #f0f194
+    ); 
+    background: linear-gradient(
+      to right,
+      #a6ffcb,
+      #12d8fa,
+      #1fa2ff
+    ); 
+  }
+  
+  .servicesC:nth-child(3) {
+    background-image: linear-gradient(
+      -225deg,
+      #231557 0%,
+      #44107a 29%,
+      #ff1361 67%,
+      #fff800 100%
+    );
+  }
+  
+  .servicesC h2 {
+    text-align: center;
+  }
+  
+  .servicesC p {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 20px;
+  }
+  
+  .servicesB {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+  }
+  
+  .servicesC button {
+    color: #fff;
+    padding: 14px 24px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #131313;
+    font-size: 1rem;
+  }
+  
+  .servicesC button:hover {
+    cursor: pointer;
+  }
+  
+  .servicesC:hover {
+    transform: scale(1.075);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 1300px) {
+    .servicesW {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .servicesW {
+      grid-template-columns: 1fr;
+    }
+  }
+
+
